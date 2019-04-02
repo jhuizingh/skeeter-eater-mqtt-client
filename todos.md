@@ -1,0 +1,35 @@
+# Todos for Skeeter Eater MQTT Client
+
+- Server
+  - Data validation
+    - Servers
+    - Subscriptions
+    - Messages
+  - MQTT Client
+    - Error handling on mqtt clients
+    - Make sure mqtt clients always get closed
+  - Notifier class/Interface - the websocket notifier and the MqttClient both need to be called when records in the database are modified. Rather than making the Database class track all the calls it needs to make for notification, it should call a single Notifier class that any other class can subscribe to.
+- Client
+  - Collapse Messages (compact view & full view)
+  - Collapse Subscriptions
+  - Test components
+    - Server List
+    - Server Item
+    - Subscription List
+    - Subscription Item
+    - etc...
+  - Different color for each connection (configurable?)
+  - Change listeners property to private on webSocketClient.js.
+  - In websocket messages, filter by parent id where needed by adding a filter parameter to the collection helper.
+  - In 2 browsers, edit a subscription in one and save. Both update the display properly. Then select edit the same record in the opposite browser. It still has the old version of the record in the edit form even though the display is updated.
+- Affects Both Server and UI
+  - Multiple "workspaces" (saved set of topics to watch as a group)
+  - Validation of inputs
+  - Testing
+    - Routes
+    - Database saving
+  - Websockets connection problem detection
+  - CollectionHelper - error checking in case it is called with improper arguments
+- Possible future ideas
+  - Integrate into VSCode
+  - Create Chrome Extension
