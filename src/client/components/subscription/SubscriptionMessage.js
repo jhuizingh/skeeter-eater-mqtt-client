@@ -19,7 +19,11 @@ export default function SubscriptionMessage(props) {
               {qos}
             </Badge>
           </Col>
-          <Col>{message.topic === subscription.topic ? '' : message.topic}</Col>
+          <Col>
+            <span data-testid="subscription-topic">
+              {message.topic === subscription.topic ? '' : message.topic}
+            </span>
+          </Col>
         </Row>
       </Card.Header>
       <Card.Body className="text-left">

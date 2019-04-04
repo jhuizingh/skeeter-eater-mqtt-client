@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message topic shows if different than Subscription topic Does not show when matching 1`] = `
+<div>
+  <div
+    class="subscription-message card"
+  >
+    <div
+      class="card-header"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="time text-left pl-1 col-md-auto"
+        >
+          Mon Apr 01 2019 10:13:27 GMT-0700 (Pacific Daylight Time)
+          <span
+            class="badge"
+          >
+             QoS: 
+            0
+          </span>
+        </div>
+        <div
+          class="col"
+        >
+          <span
+            data-testid="subscription-topic"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="text-left card-body"
+    >
+      <div>
+        <span
+          class="badge badge-primary"
+        >
+          Content: 
+        </span>
+         here is the value
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Message topic shows if different than Subscription topic Does show when not matching 1`] = `
+<div>
+  <div
+    class="subscription-message card"
+  >
+    <div
+      class="card-header"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="time text-left pl-1 col-md-auto"
+        >
+          Mon Apr 01 2019 10:13:27 GMT-0700 (Pacific Daylight Time)
+          <span
+            class="badge"
+          >
+             QoS: 
+            0
+          </span>
+        </div>
+        <div
+          class="col"
+        >
+          <span
+            data-testid="subscription-topic"
+          >
+            another/completely/different/topic
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="text-left card-body"
+    >
+      <div>
+        <span
+          class="badge badge-primary"
+        >
+          Content: 
+        </span>
+         here is the value
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SubscriptionMessage Component render 1`] = `
+<div>
+  <div
+    class="subscription-message card"
+  >
+    <div
+      class="card-header"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="time text-left pl-1 col-md-auto"
+        >
+          Mon Apr 01 2019 10:13:27 GMT-0700 (Pacific Daylight Time)
+          <span
+            class="badge"
+          >
+             QoS: 
+            0
+          </span>
+        </div>
+        <div
+          class="col"
+        >
+          <span
+            data-testid="subscription-topic"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="text-left card-body"
+    >
+      <div>
+        <span
+          class="badge badge-primary"
+        >
+          Content: 
+        </span>
+         here is the value
+      </div>
+    </div>
+  </div>
+</div>
+`;
